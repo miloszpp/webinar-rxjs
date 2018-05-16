@@ -1,9 +1,5 @@
-class Car {
-    constructor(private engine: string) {
+import { Observable, from, fromEvent, Subject } from 'rxjs';
+import { map, filter, mergeMap, debounceTime, tap } from 'rxjs/operators';
 
-    }
-}
-
-setInterval(() => {
-    document.getElementsByTagName("h1")[0].innerText = "Bye!";
-}, 1000);
+// const response$ = from(fetch('https://dog.ceo/api/breed/boxer/images/random'));
+// response$.subscribe(console.log);
